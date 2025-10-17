@@ -4,22 +4,22 @@
 #página usuario.html dinâmica
 from flask import Flask, render_template
 
-app_Mariela = Flask(__name__ , template_folder='templates')
+app_Wata = Flask(__name__ , template_folder='templates')
 #cria o objeto da aplicação
 
-@app_Mariela.route("/")  #rota para solicitação web
+@app_Wata.route("/")  #rota para solicitação web
 def homepage():          #função
     return render_template ("homepage.html")
 
-@app_Mariela.route("/contato")
+@app_Wata.route("/contato")
 def contato():
     return render_template("contato.html") 
 
-@app_Mariela.route("/index")
+@app_Wata.route("/index")
 def indice():
     return render_template ("index.html") 
 
-@app_Mariela.route("/usuario")
+@app_Wata.route("/usuario")
 def dados_usuario():
     #nome_usuario="Mariela"
     dados_usu = {"nome": "Mariela", "profissao": "Professora EBTT", "disciplina":"Desenvolvimento Web III"}
@@ -28,5 +28,5 @@ def dados_usuario():
                                            #colocar o site no ar
 
 if __name__ == "__main__": 
-     app_Mariela.run(port = 8000) 
+     app_Wata.run(port = 8000) 
                                 
