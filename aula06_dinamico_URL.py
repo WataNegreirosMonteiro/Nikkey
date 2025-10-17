@@ -1,26 +1,25 @@
 #Criamos no decorador app_Wata com página dinâmica
 from flask import Flask, render_template
 
-app_Wata = Flask(__name__)
+app_Wata = Flask(__name__,template_folder='t_templates')
  
 
 @app_Wata.route("/")  #rota para solicitação web
 def homepage():     #função da rota
-    return render_template ("homepage.html")
+    return render_template ("t_index.html")
 
 @app_Wata.route("/index")
 def indice():
-    return render_template ("index.html") 
+    return render_template ("t_index.html") 
 
 @app_Wata.route("/contato")
 def contato():
-    return render_template("contato.html") 
+    return render_template("t_contato.html") 
 
 @app_Wata.route("/usuario")
 def dados_usuario():
-    #nome_usuario="Mariela"
     dados_usu = {"nome": "Mariela","profissao": "Professora EBTT", "disciplina":"Desenvolvimento Web III"}
-    return render_template("usuario.html",  dados = dados_usu)
+    return render_template("t_usuario.html",  dados = dados_usu)
                                            #parâmetro recebe argumento
                                            #colocar o site no ar
 #########################################
@@ -36,7 +35,7 @@ def saudacao(id):
     #select nome, profissao, disciplina 
     # from usario where usuario=id
     # resultados 
-    return render_template('homepage_nome.html', nome=id)
+    return render_template('t_index.html', nome=id)
 
 @app_Wata.route("/usuario/<nome_usuario>;<nome_profissao>;<nome_disciplina>") 
 #o que está entre < > é o dado dinâmico que vai diferenciar a página para cada usuário.
@@ -45,7 +44,7 @@ def usuario (nome_usuario, nome_profissao, nome_disciplina): #passa o valor da v
     dados_usu = {"profissao": nome_profissao, "disciplina": nome_disciplina}
     #dados_usu é um dicionário com 2 chaves:valor
 
-    return render_template ("usuario.html", nome=nome_usuario, dados = dados_usu)  
+    return render_template ("t_usuario.html", nome=nome_usuario, dados = dados_usu)  
         #o parâmetro 'nome' recebe como argumento o valor armazenado na variável 'nome_usuario'
         #o parâmetro 'dados' recebe como argumento o dicionário dados_usu
 
