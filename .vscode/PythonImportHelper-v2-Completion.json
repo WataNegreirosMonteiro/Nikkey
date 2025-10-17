@@ -32,22 +32,6 @@
         "documentation": {}
     },
     {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
         "label": "request",
         "importPath": "flask",
         "description": "flask",
@@ -61,69 +45,6 @@
         "description": "flask",
         "isExtraImport": true,
         "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "homepage",
-        "kind": 2,
-        "importPath": "aula06_dinamico_URL",
-        "description": "aula06_dinamico_URL",
-        "peekOfCode": "def homepage():     #função da rota\n    return render_template (\"t_index.html\")\n@app_Wata.route(\"/index\")\ndef indice():\n    return render_template (\"t_index.html\") \n@app_Wata.route(\"/contato\")\ndef contato():\n    return render_template(\"t_contato.html\") \n@app_Wata.route(\"/usuario\")\ndef dados_usuario():",
-        "detail": "aula06_dinamico_URL",
-        "documentation": {}
-    },
-    {
-        "label": "indice",
-        "kind": 2,
-        "importPath": "aula06_dinamico_URL",
-        "description": "aula06_dinamico_URL",
-        "peekOfCode": "def indice():\n    return render_template (\"t_index.html\") \n@app_Wata.route(\"/contato\")\ndef contato():\n    return render_template(\"t_contato.html\") \n@app_Wata.route(\"/usuario\")\ndef dados_usuario():\n    dados_usu = {\"nome\": \"Mariela\",\"profissao\": \"Professora EBTT\", \"disciplina\":\"Desenvolvimento Web III\"}\n    return render_template(\"t_usuario.html\",  dados = dados_usu)\n                                           #parâmetro recebe argumento",
-        "detail": "aula06_dinamico_URL",
-        "documentation": {}
-    },
-    {
-        "label": "contato",
-        "kind": 2,
-        "importPath": "aula06_dinamico_URL",
-        "description": "aula06_dinamico_URL",
-        "peekOfCode": "def contato():\n    return render_template(\"t_contato.html\") \n@app_Wata.route(\"/usuario\")\ndef dados_usuario():\n    dados_usu = {\"nome\": \"Mariela\",\"profissao\": \"Professora EBTT\", \"disciplina\":\"Desenvolvimento Web III\"}\n    return render_template(\"t_usuario.html\",  dados = dados_usu)\n                                           #parâmetro recebe argumento\n                                           #colocar o site no ar\n#########################################\n\"\"\"",
-        "detail": "aula06_dinamico_URL",
-        "documentation": {}
-    },
-    {
-        "label": "dados_usuario",
-        "kind": 2,
-        "importPath": "aula06_dinamico_URL",
-        "description": "aula06_dinamico_URL",
-        "peekOfCode": "def dados_usuario():\n    dados_usu = {\"nome\": \"Mariela\",\"profissao\": \"Professora EBTT\", \"disciplina\":\"Desenvolvimento Web III\"}\n    return render_template(\"t_usuario.html\",  dados = dados_usu)\n                                           #parâmetro recebe argumento\n                                           #colocar o site no ar\n#########################################\n\"\"\"\n  Página dinâmica com argumentos via URL. Precisa de 3 elementos: \n  o dado dinâmico na URL entre < >, \n  os parâmetros na função e ",
-        "detail": "aula06_dinamico_URL",
-        "documentation": {}
-    },
-    {
-        "label": "saudacao",
-        "kind": 2,
-        "importPath": "aula06_dinamico_URL",
-        "description": "aula06_dinamico_URL",
-        "peekOfCode": "def saudacao(id):\n    #codigo para conectar com BD\n    #select nome, profissao, disciplina \n    # from usario where usuario=id\n    # resultados \n    return render_template('t_index.html', nome=id)\n@app_Wata.route(\"/usuario/<nome_usuario>;<nome_profissao>;<nome_disciplina>\") \n#o que está entre < > é o dado dinâmico que vai diferenciar a página para cada usuário.\ndef usuario (nome_usuario, nome_profissao, nome_disciplina): #passa o valor da variável como argumento na função\n    dados_usu = {\"profissao\": nome_profissao, \"disciplina\": nome_disciplina}",
-        "detail": "aula06_dinamico_URL",
-        "documentation": {}
-    },
-    {
-        "label": "usuari",
-        "kind": 2,
-        "importPath": "aula06_dinamico_URL",
-        "description": "aula06_dinamico_URL",
-        "peekOfCode": "def usuario (nome_usuario, nome_profissao, nome_disciplina): #passa o valor da variável como argumento na função\n    dados_usu = {\"profissao\": nome_profissao, \"disciplina\": nome_disciplina}\n    #dados_usu é um dicionário com 2 chaves:valor\n    return render_template (\"t_usuario.html\", nome=nome_usuario, dados = dados_usu)  \n        #o parâmetro 'nome' recebe como argumento o valor armazenado na variável 'nome_usuario'\n        #o parâmetro 'dados' recebe como argumento o dicionário dados_usu\n#colocar o site no ar\nif __name__ == \"__main__\": \n     app_Wata.run(port = 8000)",
-        "detail": "aula06_dinamico_URL",
-        "documentation": {}
-    },
-    {
-        "label": "app_Wata",
-        "kind": 5,
-        "importPath": "aula06_dinamico_URL",
-        "description": "aula06_dinamico_URL",
-        "peekOfCode": "app_Wata = Flask(__name__,template_folder='t_templates')\n@app_Wata.route(\"/\")  #rota para solicitação web\ndef homepage():     #função da rota\n    return render_template (\"t_index.html\")\n@app_Wata.route(\"/index\")\ndef indice():\n    return render_template (\"t_index.html\") \n@app_Wata.route(\"/contato\")\ndef contato():\n    return render_template(\"t_contato.html\") ",
-        "detail": "aula06_dinamico_URL",
         "documentation": {}
     },
     {
