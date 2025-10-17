@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- página template(modelo) com layout base das páginas do site -->
+
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Perfil do Usuário</title>
+    <link rel = "stylesheet" href="{{ url_for('static', filename = 'css/estilo.css')}}">
+    
+    {% block scripts %} 
+    
+    {% endblock %}
+  </head>
+ 
+    <body>
+    <!--Informação que muda nas páginas coloca como extensão -->
+    {% block conteudo %}    
+
+    {% endblock %}
+
+    </body>
+</html>
