@@ -1,22 +1,22 @@
-#Criamos no decorador app_Mariela com página dinâmica
+#Criamos no decorador app_Wata com página dinâmica
 from flask import Flask, render_template
 
-app_Mariela = Flask(__name__)
+app_Wata = Flask(__name__)
  
 
-@app_Mariela.route("/")  #rota para solicitação web
+@app_Wata.route("/")  #rota para solicitação web
 def homepage():     #função da rota
     return render_template ("homepage.html")
 
-@app_Mariela.route("/index")
+@app_Wata.route("/index")
 def indice():
     return render_template ("index.html") 
 
-@app_Mariela.route("/contato")
+@app_Wata.route("/contato")
 def contato():
     return render_template("contato.html") 
 
-@app_Mariela.route("/usuario")
+@app_Wata.route("/usuario")
 def dados_usuario():
     #nome_usuario="Mariela"
     dados_usu = {"nome": "Mariela","profissao": "Professora EBTT", "disciplina":"Desenvolvimento Web III"}
@@ -30,7 +30,7 @@ def dados_usuario():
   os parâmetros na função e 
   a página montada dinamicamente.
 """
-@app_Mariela.route('/usuario/<id>')
+@app_Wata.route('/usuario/<id>')
 def saudacao(id):
     #codigo para conectar com BD
     #select nome, profissao, disciplina 
@@ -38,7 +38,7 @@ def saudacao(id):
     # resultados 
     return render_template('homepage_nome.html', nome=id)
 
-@app_Mariela.route("/usuario/<nome_usuario>;<nome_profissao>;<nome_disciplina>") 
+@app_Wata.route("/usuario/<nome_usuario>;<nome_profissao>;<nome_disciplina>") 
 #o que está entre < > é o dado dinâmico que vai diferenciar a página para cada usuário.
 def usuario (nome_usuario, nome_profissao, nome_disciplina): #passa o valor da variável como argumento na função
     
@@ -52,4 +52,4 @@ def usuario (nome_usuario, nome_profissao, nome_disciplina): #passa o valor da v
 
 #colocar o site no ar
 if __name__ == "__main__": 
-     app_Mariela.run(port = 8000) 
+     app_Wata.run(port = 8000) 
