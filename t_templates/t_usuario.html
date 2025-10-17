@@ -2,14 +2,17 @@
  
 {% block conteudo %}
 
-<h2>Olá, {{nome}} </h2>
+<h2>Ola, {{nome}} </h2>
 <p>
-    <!-- 'static' é a pasta do projeto onde copio as imagens -->
+    <!-- 'static' Ǹ a pasta do projeto onde copio as imagens -->
     <img class="imgquadrada" src = "{{ url_for ('static', filename = 'imagens/professora.jpg') }}" >
     
+    <h1>{{ ('O id do usuário é: ' ~ nome) if nome else '' }}</h1>
+
     <br>
-    <b>Profissão: </b> {{ dados['profissao']  }} <br/>
+    <b>Profissao: </b> {{ dados['profissao']  }} <br/>
     <b>Disciplina: </b> {{ dados['disciplina']  }}
 </p>
 
 {% endblock %}  
+
