@@ -8,142 +8,21 @@
         "documentation": {}
     },
     {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "indice",
+        "label": "inicio",
         "kind": 2,
-        "importPath": "aula07_template",
-        "description": "aula07_template",
-        "peekOfCode": "def indice():\n    return render_template (\"t_index.html\") #optei por prefixar com t_ os nomes dos arquivos que usam template\n@app_Wata.route(\"/contato\")\ndef contato():\n    return render_template(\"t_contato.html\") \n@app_Wata.route(\"/login\")\ndef login():\n    return render_template(\"t_login.html\") \n@app_Wata.route(\"/usuario\", defaults={\"nome_usuario\":\"usuário?\",\"nome_profissao\":\"\"}) \ndef usuarios (nome_usuario, nome_profissao):",
-        "detail": "aula07_template",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def inicio():\n    return ''                                            \nif __name__ == \"__main__\": \n    app.run(port = 8000)",
+        "detail": "app",
         "documentation": {}
     },
     {
-        "label": "contato",
-        "kind": 2,
-        "importPath": "aula07_template",
-        "description": "aula07_template",
-        "peekOfCode": "def contato():\n    return render_template(\"t_contato.html\") \n@app_Wata.route(\"/login\")\ndef login():\n    return render_template(\"t_login.html\") \n@app_Wata.route(\"/usuario\", defaults={\"nome_usuario\":\"usuário?\",\"nome_profissao\":\"\"}) \ndef usuarios (nome_usuario, nome_profissao):\n    dados_usu = {\"profissao\": nome_profissao, \"disciplina\":\"Desenvolvimento Web III\"}\n    return render_template (\"t_usuario.html\", nome=nome_usuario, dados = dados_usu)  \n#rota /usuarios COM passagem de argumentos",
-        "detail": "aula07_template",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "kind": 2,
-        "importPath": "aula07_template",
-        "description": "aula07_template",
-        "peekOfCode": "def login():\n    return render_template(\"t_login.html\") \n@app_Wata.route(\"/usuario\", defaults={\"nome_usuario\":\"usuário?\",\"nome_profissao\":\"\"}) \ndef usuarios (nome_usuario, nome_profissao):\n    dados_usu = {\"profissao\": nome_profissao, \"disciplina\":\"Desenvolvimento Web III\"}\n    return render_template (\"t_usuario.html\", nome=nome_usuario, dados = dados_usu)  \n#rota /usuarios COM passagem de argumentos\n#@app_Wata.route(\"/usuario/<nome_usuario>;<nome_profissao>\")\n#rota /usuarios SEM passagem de argumentos --> definir valor padrão com defaults\nif __name__ == \"__main__\": ",
-        "detail": "aula07_template",
-        "documentation": {}
-    },
-    {
-        "label": "usuario",
-        "kind": 2,
-        "importPath": "aula07_template",
-        "description": "aula07_template",
-        "peekOfCode": "def usuarios (nome_usuario, nome_profissao):\n    dados_usu = {\"profissao\": nome_profissao, \"disciplina\":\"Desenvolvimento Web III\"}\n    return render_template (\"t_usuario.html\", nome=nome_usuario, dados = dados_usu)  \n#rota /usuarios COM passagem de argumentos\n#@app_Wata.route(\"/usuario/<nome_usuario>;<nome_profissao>\")\n#rota /usuarios SEM passagem de argumentos --> definir valor padrão com defaults\nif __name__ == \"__main__\": \n     app_Wata.run(port = 8000)",
-        "detail": "aula07_template",
-        "documentation": {}
-    },
-    {
-        "label": "app_Wata",
+        "label": "app",
         "kind": 5,
-        "importPath": "aula07_template",
-        "description": "aula07_template",
-        "peekOfCode": "app_Wata = Flask(__name__, template_folder='t_templates') \n# os templates coloca em outra pasta. \n# Por padrão, fica na pasta templates e não precisa informar no template_folder,\n# mas se quiser armazenar em outra pasta indique nesse parâmetro.\n@app_Wata.route(\"/\")       #se no navegador digitar / ou /index\n@app_Wata.route(\"/index\")  \ndef indice():\n    return render_template (\"t_index.html\") #optei por prefixar com t_ os nomes dos arquivos que usam template\n@app_Wata.route(\"/contato\")\ndef contato():",
-        "detail": "aula07_template",
-        "documentation": {}
-    },
-    {
-        "label": "indice",
-        "kind": 2,
-        "importPath": "aula08_post",
-        "description": "aula08_post",
-        "peekOfCode": "def indice():\n    return render_template (\"t_index.html\")                                               #optei por prefixar com t_ os nomes dos arquivos que usam template\n@app_Wata.route(\"/contato\")\ndef contato():\n    return render_template(\"t_contato.html\") \n#rota /usuarios COM passagem de argumentos\n@app_Wata.route(\"/usuarios/<nome_usuario>;<nome_profissao>\")\n#rota /usuarios SEM passagem de argumentos --> definir valor padrão com defaults\n@app_Wata.route(\"/usuarios\", defaults={\"nome_usuario\":\"usuário?\",\"nome_profissao\":\"\"})  \ndef usuarios (nome_usuario, nome_profissao):",
-        "detail": "aula08_post",
-        "documentation": {}
-    },
-    {
-        "label": "contato",
-        "kind": 2,
-        "importPath": "aula08_post",
-        "description": "aula08_post",
-        "peekOfCode": "def contato():\n    return render_template(\"t_contato.html\") \n#rota /usuarios COM passagem de argumentos\n@app_Wata.route(\"/usuarios/<nome_usuario>;<nome_profissao>\")\n#rota /usuarios SEM passagem de argumentos --> definir valor padrão com defaults\n@app_Wata.route(\"/usuarios\", defaults={\"nome_usuario\":\"usuário?\",\"nome_profissao\":\"\"})  \ndef usuarios (nome_usuario, nome_profissao):\n    dados_usu = {\"profissao\": nome_profissao, \"disciplina\":\"Desenvolvimento Web III\"}\n    return render_template (\"t_usuario.html\", nome=nome_usuario, dados = dados_usu)  \n#new",
-        "detail": "aula08_post",
-        "documentation": {}
-    },
-    {
-        "label": "usuario",
-        "kind": 2,
-        "importPath": "aula08_post",
-        "description": "aula08_post",
-        "peekOfCode": "def usuarios (nome_usuario, nome_profissao):\n    dados_usu = {\"profissao\": nome_profissao, \"disciplina\":\"Desenvolvimento Web III\"}\n    return render_template (\"t_usuario.html\", nome=nome_usuario, dados = dados_usu)  \n#new\n@app_Wata.route(\"/login\")\ndef login():\n    return render_template(\"t_login.html\") \n#new\n\"\"\"\nPara poder recuperar os argumentos passados nos parâmetros na URL precisa importar o pacote",
-        "detail": "aula08_post",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "kind": 2,
-        "importPath": "aula08_post",
-        "description": "aula08_post",
-        "peekOfCode": "def login():\n    return render_template(\"t_login.html\") \n#new\n\"\"\"\nPara poder recuperar os argumentos passados nos parâmetros na URL precisa importar o pacote\nfrom flask import request\nTambém precisa colocar que essa página aceita requisições de tipo GET ou POST\nO GET é padrão, mas no caso do POST altere no html method=\"POST\"\n\"\"\"\n@app_Wata.route(\"/autenticar\", methods=['POST'] ) ",
-        "detail": "aula08_post",
-        "documentation": {}
-    },
-    {
-        "label": "autenticar",
-        "kind": 2,
-        "importPath": "aula08_post",
-        "description": "aula08_post",
-        "peekOfCode": "def autenticar():\n    #método GET - recebe pela URL ==> (args)\n    #usuario = request.args.get('nome_usuario')\n    #senha = request.args.get('senha')\n    #, methods=['POST'] método POST - pega nos fields (campos) do formulário => form\n    usuario = request.form.get('nome_usuario')\n    senha = request.form.get('senha')\n    return f\"usuario: {usuario} e senha: {senha}\"\nif __name__ == \"__main__\": \n     app_Wata.run(port = 8000)",
-        "detail": "aula08_post",
-        "documentation": {}
-    },
-    {
-        "label": "app_Wata",
-        "kind": 5,
-        "importPath": "aula08_post",
-        "description": "aula08_post",
-        "peekOfCode": "app_Wata = Flask(__name__, template_folder='t_templates') \n# os templates coloca em outra pasta. \n# Por padrão, fica na pasta templates e não precisa informar no template_folder,\n# mas se quiser armazenar em outra pasta indique nesse parâmetro.\n@app_Wata.route(\"/\")       #se no navegador digitar / ou /index\n@app_Wata.route(\"/index\")  \ndef indice():\n    return render_template (\"t_index.html\")                                               #optei por prefixar com t_ os nomes dos arquivos que usam template\n@app_Wata.route(\"/contato\")\ndef contato():",
-        "detail": "aula08_post",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__, template_folder='paginas') \n@app.route(\"/\")   \ndef inicio():\n    return ''                                            \nif __name__ == \"__main__\": \n    app.run(port = 8000)",
+        "detail": "app",
         "documentation": {}
     }
 ]
