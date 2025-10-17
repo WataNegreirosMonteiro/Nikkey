@@ -23,7 +23,7 @@ def indice():
 def dados_usuario():
     #nome_usuario="Mariela"
     dados_usu = {"nome": "Mariela", "profissao": "Professora EBTT", "disciplina":"Desenvolvimento Web III"}
-    return render_template("usuario.html", dados = dados_usu)
+    return render_template("t_usuario.html", dados = dados_usu)
                                            #parâmetro recebe argumento
                                            #colocar o site no ar
 
