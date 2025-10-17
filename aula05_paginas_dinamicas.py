@@ -1,5 +1,5 @@
 """
-@author: Mariela
+@author: Wata
 """
 #página usuario.html dinâmica
 from flask import Flask, render_template
