@@ -52,7 +52,7 @@
       </div>
 
       <button id="mostrar" class="w-full bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition">Mostrar elemento japonês</button>
-      <button id="cartao" class="w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition">Gerar cartão</button>
+      <button id="cartao" class="w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition">Gerar cartão aleatório</button>
 
       <div id="resultado" class="hidden mt-4 p-4 border border-gray-200 rounded-lg text-center">
         <div class="text-5xl leading-none mb-2">🙇‍♂️</div>
@@ -95,8 +95,8 @@
       btnCartao.addEventListener('click', function (e) {
         e.preventDefault();
         const nome = (input.value || '').trim();
-        if (!nome) { erro.classList.remove('hidden'); return; }
-        const url = '/cartao?nome=' + encodeURIComponent(nome);
+        // Se não informar nome, usa o nome do usuário logado no backend
+        const url = nome ? ('/cartao?nome=' + encodeURIComponent(nome)) : '/cartao';
         window.location.href = url;
       });
     }
@@ -104,4 +104,3 @@
 </body>
 
 </html>
-

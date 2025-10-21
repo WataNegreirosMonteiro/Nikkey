@@ -111,7 +111,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "BASE_DIR = Path(__file__).parent.resolve()\nPAGINAS_DIR = BASE_DIR / \"paginas\"\nASSETS_DIR = BASE_DIR / \"assets\"\nDATA_DIR = BASE_DIR / \"data\"\nUSERS_JSON = DATA_DIR / \"usuarios.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)",
+        "peekOfCode": "BASE_DIR = Path(__file__).parent.resolve()\nPAGINAS_DIR = BASE_DIR / \"paginas\"\nASSETS_DIR = BASE_DIR / \"assets\"\nDATA_DIR = BASE_DIR / \"data\"\nUSERS_JSON = DATA_DIR / \"usuarios.json\"\nELEMENTS_JSON = DATA_DIR / \"elementos.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------",
         "detail": "app",
         "documentation": {}
     },
@@ -120,7 +120,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "PAGINAS_DIR = BASE_DIR / \"paginas\"\nASSETS_DIR = BASE_DIR / \"assets\"\nDATA_DIR = BASE_DIR / \"data\"\nUSERS_JSON = DATA_DIR / \"usuarios.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)\n    def load_users():",
+        "peekOfCode": "PAGINAS_DIR = BASE_DIR / \"paginas\"\nASSETS_DIR = BASE_DIR / \"assets\"\nDATA_DIR = BASE_DIR / \"data\"\nUSERS_JSON = DATA_DIR / \"usuarios.json\"\nELEMENTS_JSON = DATA_DIR / \"elementos.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)",
         "detail": "app",
         "documentation": {}
     },
@@ -129,7 +129,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "ASSETS_DIR = BASE_DIR / \"assets\"\nDATA_DIR = BASE_DIR / \"data\"\nUSERS_JSON = DATA_DIR / \"usuarios.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)\n    def load_users():\n        if not USERS_JSON.exists():",
+        "peekOfCode": "ASSETS_DIR = BASE_DIR / \"assets\"\nDATA_DIR = BASE_DIR / \"data\"\nUSERS_JSON = DATA_DIR / \"usuarios.json\"\nELEMENTS_JSON = DATA_DIR / \"elementos.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)\n    def load_users():",
         "detail": "app",
         "documentation": {}
     },
@@ -138,7 +138,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "DATA_DIR = BASE_DIR / \"data\"\nUSERS_JSON = DATA_DIR / \"usuarios.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)\n    def load_users():\n        if not USERS_JSON.exists():\n            return []",
+        "peekOfCode": "DATA_DIR = BASE_DIR / \"data\"\nUSERS_JSON = DATA_DIR / \"usuarios.json\"\nELEMENTS_JSON = DATA_DIR / \"elementos.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)\n    def load_users():\n        if not USERS_JSON.exists():",
         "detail": "app",
         "documentation": {}
     },
@@ -147,7 +147,16 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "USERS_JSON = DATA_DIR / \"usuarios.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)\n    def load_users():\n        if not USERS_JSON.exists():\n            return []\n        try:",
+        "peekOfCode": "USERS_JSON = DATA_DIR / \"usuarios.json\"\nELEMENTS_JSON = DATA_DIR / \"elementos.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)\n    def load_users():\n        if not USERS_JSON.exists():\n            return []",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "ELEMENTS_JSON",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "ELEMENTS_JSON = DATA_DIR / \"elementos.json\"\ndef create_app() -> Flask:\n    app = Flask(__name__, template_folder=str(PAGINAS_DIR))\n    app.secret_key = os.environ.get(\"SECRET_KEY\", \"dev-secret-key\")\n    # -------------- Utilidades de persistência --------------\n    DATA_DIR.mkdir(exist_ok=True)\n    def load_users():\n        if not USERS_JSON.exists():\n            return []\n        try:",
         "detail": "app",
         "documentation": {}
     },

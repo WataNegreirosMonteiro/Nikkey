@@ -1,0 +1,50 @@
+[
+  {
+    "titulo": "Origami Tsuru",
+    "subtitulo": "Tsuru de Origami",
+    "descricao": "Você representa paciência, esperança e realização de desejos. Como mil tsurus, você traz sonhos realizados.",
+    "icone": "paper-airplane"
+  },
+  {
+    "titulo": "Sakura",
+    "subtitulo": "Flor de Cerejeira",
+    "descricao": "Beleza efêmera e renovação. Você inspira novos começos e aprecia o momento presente.",
+    "icone": "flower"
+  },
+  {
+    "titulo": "Samurai",
+    "subtitulo": "Caminho do Bushidô",
+    "descricao": "Honra, coragem e disciplina. Você enfrenta desafios com determinação e propósito.",
+    "icone": "shield-check"
+  },
+  {
+    "titulo": "Torii",
+    "subtitulo": "Portal Sagrado",
+    "descricao": "Transição e espiritualidade. Você busca significado e abre caminhos para o sagrado em sua vida.",
+    "icone": "gate"
+  },
+  {
+    "titulo": "Carpa Koi",
+    "subtitulo": "Força e Perseverança",
+    "descricao": "Resiliência e sorte. Você segue contra a corrente e transforma obstáculos em crescimento.",
+    "icone": "fish"
+  },
+  {
+    "titulo": "Bonsai",
+    "subtitulo": "Arte da Paciência",
+    "descricao": "Cuidado e equilíbrio. Você cultiva o potencial, respeitando o tempo e a natureza.",
+    "icone": "tree"
+  },
+  {
+    "titulo": "Sushi",
+    "subtitulo": "Harmonia de Sabores",
+    "descricao": "Criatividade e precisão. Você combina simplicidade e elegância para criar experiências memoráveis.",
+    "icone": "sparkles"
+  },
+  {
+    "titulo": "Taiko",
+    "subtitulo": "Tambor Japonês",
+    "descricao": "Energia e ritmo. Você contagia as pessoas ao seu redor com força e entusiasmo.",
+    "icone": "drum"
+  }
+]
