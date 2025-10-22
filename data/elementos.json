@@ -1,0 +1,114 @@
+[
+  {
+    "titulo": "Origami Tsuru",
+    "subtitulo": "Tsuru de Origami",
+    "descricao": "Você representa paciência, esperança e realização de desejos. Como mil tsurus, você traz sonhos realizados.",
+    "icone": "🕊️",
+    "japones": "折り紙鶴 (おりがみつる, origami tsuru)"
+  },
+  {
+    "titulo": "Sakura",
+    "subtitulo": "Flor de Cerejeira",
+    "descricao": "Beleza efêmera e renovação. Você inspira novos começos e aprecia o momento presente.",
+    "icone": "🌸",
+    "japones": "桜 (さくら, sakura)"
+  },
+  {
+    "titulo": "Samurai",
+    "subtitulo": "Caminho do Bushidô",
+    "descricao": "Honra, coragem e disciplina. Você enfrenta desafios com determinação e propósito.",
+    "icone": "🛡️",
+    "japones": "侍 (さむらい, samurai)"
+  },
+  {
+    "titulo": "Torii",
+    "subtitulo": "Portal Sagrado",
+    "descricao": "Transição e espiritualidade. Você busca significado e abre caminhos para o sagrado em sua vida.",
+    "icone": "⛩️",
+    "japones": "鳥居 (とりい, torii)"
+  },
+  {
+    "titulo": "Carpa Koi",
+    "subtitulo": "Força e Perseverança",
+    "descricao": "Resiliência e sorte. Você segue contra a corrente e transforma obstáculos em crescimento.",
+    "icone": "🐟",
+    "japones": "鯉 (こい, koi)"
+  },
+  {
+    "titulo": "Bonsai",
+    "subtitulo": "Arte da Paciência",
+    "descricao": "Cuidado e equilíbrio. Você cultiva o potencial, respeitando o tempo e a natureza.",
+    "icone": "🪴",
+    "japones": "盆栽 (ぼんさい, bonsai)"
+  },
+  {
+    "titulo": "Sushi",
+    "subtitulo": "Harmonia de Sabores",
+    "descricao": "Criatividade e precisão. Você combina simplicidade e elegância para criar experiências memoráveis.",
+    "icone": "🍣",
+    "japones": "寿司 (すし, sushi)"
+  },
+  {
+    "titulo": "Taiko",
+    "subtitulo": "Tambor Japonês",
+    "descricao": "Energia e ritmo. Você contagia as pessoas ao seu redor com força e entusiasmo.",
+    "icone": "🥁",
+    "japones": "太鼓 (たいこ, taiko)"
+  },
+  {
+    "titulo": "Fuji",
+    "subtitulo": "Montanha Sagrada",
+    "descricao": "Estabilidade e inspiração. Você é um ponto de referência que eleva os outros ao seu redor.",
+    "icone": "🏔️",
+    "japones": "富士山 (ふじさん, fujisan)"
+  },
+  {
+    "titulo": "Haiku",
+    "subtitulo": "Poesia do Instante",
+    "descricao": "Simplicidade e profundidade. Você captura a essência das coisas em poucas palavras.",
+    "icone": "📖",
+    "japones": "俳句 (はいく, haiku)"
+  },
+  {
+    "titulo": "Onsen",
+    "subtitulo": "Águas Termais",
+    "descricao": "Relaxamento e purificação. Você oferece refúgio e renova energias com calma.",
+    "icone": "♨️",
+    "japones": "温泉 (おんせん, onsen)"
+  },
+  {
+    "titulo": "Katana",
+    "subtitulo": "Espada do Samurai",
+    "descricao": "Precisão e honra. Você corta o desnecessário e age com clareza e integridade.",
+    "icone": "⚔️",
+    "japones": "刀 (かたな, katana)"
+  },
+  {
+    "titulo": "Maneki-neko",
+    "subtitulo": "Gato da Sorte",
+    "descricao": "Prosperidade e boas-vindas. Você atrai oportunidades e recebe com generosidade.",
+    "icone": "🐱",
+    "japones": "招き猫 (まねきねこ, maneki-neko)"
+  },
+  {
+    "titulo": "Shodo",
+    "subtitulo": "Caligrafia Japonesa",
+    "descricao": "Arte e meditação. Você expressa emoção e equilíbrio em cada traço.",
+    "icone": "🖋️",
+    "japones": "書道 (しょどう, shodō)"
+  },
+  {
+    "titulo": "Tanabata",
+    "subtitulo": "Festival das Estrelas",
+    "descricao": "Sonhos e conexão. Você celebra desejos e une pessoas por meio da esperança.",
+    "icone": "✨",
+    "japones": "七夕 (たなばた, tanabata)"
+  },
+  {
+    "titulo": "Matcha",
+    "subtitulo": "Chá Verde em Pó",
+    "descricao": "Mindfulness e energia. Você valoriza rituais que nutrem corpo e mente.",
+    "icone": "🍵",
+    "japones": "抹茶 (まっちゃ, matcha)"
+  }
+]
