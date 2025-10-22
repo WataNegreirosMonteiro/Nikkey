@@ -1,3 +1,6 @@
+
+<video src="./video.mp4" controls></video>
+
 # Nikkey — Descubra seu Elemento Japonês (Flask)
 
 Aplicação web em Flask que:
@@ -178,4 +181,5 @@ Exemplo `data/elementos.json` (um item):
 - Porta ocupada: altere a porta em `PORT` (env) ou no `app.run`.
 - Erros de acentuação: garanta que os arquivos estejam em UTF‑8.
 - JSON corrompido: valide o conteúdo (vírgulas e aspas). Em último caso, apague o arquivo para o app recriar (no caso de `elementos.json`).
+
 
