@@ -1,3 +1,4 @@
+<img width="1643" height="1854" alt="image" src="https://github.com/user-attachments/assets/875449d9-9d43-4a8f-b74c-0ffb9e175859" />
 
 <video src="./video.mp4" controls></video>
 
@@ -181,5 +182,6 @@ Exemplo `data/elementos.json` (um item):
 - Porta ocupada: altere a porta em `PORT` (env) ou no `app.run`.
 - Erros de acentuação: garanta que os arquivos estejam em UTF‑8.
 - JSON corrompido: valide o conteúdo (vírgulas e aspas). Em último caso, apague o arquivo para o app recriar (no caso de `elementos.json`).
+
 
 
