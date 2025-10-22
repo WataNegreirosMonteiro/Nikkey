@@ -141,7 +141,7 @@ def create_app() -> Flask:
                 save_user({
                     "nome": nome,
                     "email": email,
-                    "senha": senha,  # Em um app real, teria hash de senha
+                    "senha": senha,
                     "created_at": datetime.utcnow().isoformat() + "Z",
                 })
                 return redirect(url_for("entrada"))
@@ -160,7 +160,6 @@ def create_app() -> Flask:
             idx = None
         if idx is None or idx < 0 or idx >= len(elementos):
             idx = random.randrange(len(elementos))
-            # Gera URL estável e compartilhável com índice
             return redirect(url_for("cartao", nome=nome, e=idx))
         elemento = elementos[idx]
         return render_template("cartao.html", nome=nome, elemento=elemento, idx=idx)
